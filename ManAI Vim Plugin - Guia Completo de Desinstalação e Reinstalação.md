@@ -39,7 +39,7 @@ find ~ -name "*manai*" -type f 2>/dev/null | grep -E "\.(vim|txt)$"
 1. **Remover do ficheiro de configuração:**
 ```vim
 " Comentar ou remover esta linha do ~/.vimrc ou ~/.config/nvim/init.vim
-" Plug 'edutech-angola/manai-vim-plugin'
+" Plug 'ruscorreia/manai-vim-plugin'
 ```
 
 2. **Executar limpeza no Vim:**
@@ -54,7 +54,7 @@ find ~ -name "*manai*" -type f 2>/dev/null | grep -E "\.(vim|txt)$"
 1. **Remover do ficheiro de configuração:**
 ```vim
 " Comentar ou remover esta linha do ~/.vimrc
-" Plugin 'edutech-angola/manai-vim-plugin'
+" Plugin 'ruscorreia/manai-vim-plugin'
 ```
 
 2. **Executar limpeza no Vim:**
@@ -75,7 +75,7 @@ rm -rf ~/.vim/bundle/manai*
 1. **Remover do ficheiro de configuração:**
 ```vim
 " Comentar ou remover esta linha
-" call dein#add('edutech-angola/manai-vim-plugin')
+" call dein#add('ruscorreia/manai-vim-plugin')
 ```
 
 2. **Executar limpeza no Vim:**
@@ -88,7 +88,7 @@ rm -rf ~/.vim/bundle/manai*
 1. **Remover do ficheiro de configuração:**
 ```lua
 -- Comentar ou remover esta linha
--- use 'edutech-angola/manai-vim-plugin'
+-- use 'ruscorreia/manai-vim-plugin'
 ```
 
 2. **Executar limpeza no Neovim:**
@@ -187,7 +187,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 call plug#begin('~/.vim/plugged')
 
 " ManAI Vim Plugin
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 
 call plug#end()
 
@@ -202,7 +202,7 @@ let g:manai_auto_close = 1
 call plug#begin('~/.local/share/nvim/plugged')
 
 " ManAI Vim Plugin
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 
 call plug#end()
 
@@ -328,7 +328,7 @@ echo "   ~/.vimrc.backup.$(date +%Y%m%d)"
 echo "   ~/.config/nvim/init.vim.backup.$(date +%Y%m%d)"
 echo ""
 echo "Para reinstalar a versão corrigida:"
-echo "   1. Adicione 'Plug \"edutech-angola/manai-vim-plugin\"' ao seu .vimrc"
+echo "   1. Adicione 'Plug \"ruscorreia/manai-vim-plugin\"' ao seu .vimrc"
 echo "   2. Execute :PlugInstall no Vim"
 echo ""
 ```

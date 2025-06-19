@@ -240,7 +240,7 @@ install_vim_plug() {
         info "Para completar a instalação, adicione ao seu .vimrc ou init.vim:"
         echo ""
         echo "call plug#begin('~/.vim/plugged')"
-        echo "Plug 'edutech-angola/manai-vim-plugin'"
+        echo "Plug 'ruscorreia/manai-vim-plugin'"
         echo "call plug#end()"
         echo ""
         echo "Depois execute :PlugInstall no Vim"
@@ -261,7 +261,7 @@ add_vim_plug_config() {
 
 " === ManAI Vim Plugin ===
 call plug#begin('~/.vim/plugged')
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 call plug#end()
 
 " Configurações do ManAI
@@ -285,7 +285,7 @@ EOF
 
 " === ManAI Vim Plugin ===
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 call plug#end()
 
 " Configurações do ManAI
@@ -325,7 +325,7 @@ install_vundle() {
     else
         info "Para completar a instalação, adicione ao seu .vimrc:"
         echo ""
-        echo "Plugin 'edutech-angola/manai-vim-plugin'"
+        echo "Plugin 'ruscorreia/manai-vim-plugin'"
         echo ""
         echo "Depois execute :PluginInstall no Vim"
     fi
@@ -340,7 +340,7 @@ add_vundle_config() {
             if confirm "Adicionar configuração ao ~/.vimrc?"; then
                 # Procurar secção Vundle e adicionar plugin
                 if grep -q "call vundle#begin" ~/.vimrc; then
-                    sed -i '/call vundle#begin/a Plugin '\''edutech-angola/manai-vim-plugin'\''' ~/.vimrc
+                    sed -i '/call vundle#begin/a Plugin '\''ruscorreia/manai-vim-plugin'\''' ~/.vimrc
                 else
                     cat >> ~/.vimrc << 'EOF'
 
@@ -350,7 +350,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'edutech-angola/manai-vim-plugin'
+Plugin 'ruscorreia/manai-vim-plugin'
 call vundle#end()
 filetype plugin indent on
 

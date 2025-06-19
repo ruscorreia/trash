@@ -163,7 +163,7 @@ install_vim_plug() {
     cat >> "$config_file" << 'EOF'
 
 " ManAI Plugin Configuration
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 
 " Configurações do ManAI
 let g:manai_language = 'pt'
@@ -190,7 +190,7 @@ install_vundle() {
     cat >> "$config_file" << 'EOF'
 
 " ManAI Plugin Configuration
-Plugin 'edutech-angola/manai-vim-plugin'
+Plugin 'ruscorreia/manai-vim-plugin'
 
 " Configurações do ManAI
 let g:manai_language = 'pt'

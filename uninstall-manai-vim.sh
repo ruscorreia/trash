@@ -262,8 +262,8 @@ remove_dein() {
     log "Removendo de Dein..."
     
     if [ "$DRY_RUN" = false ]; then
-        rm -rf ~/.cache/dein/repos/github.com/edutech-angola/manai*
-        rm -rf ~/.local/share/dein/repos/github.com/edutech-angola/manai*
+        rm -rf ~/.cache/dein/repos/github.com/ruscorreia/manai*
+        rm -rf ~/.local/share/dein/repos/github.com/ruscorreia/manai*
         info "Directórios do Dein removidos"
         warning "Remova manualmente a linha 'dein#add' e execute :call dein#recache_runtimepath()"
     else
@@ -434,7 +434,7 @@ main() {
     
     if [ "$DRY_RUN" = false ]; then
         info "Próximos passos para instalar a versão corrigida:"
-        echo "1. Adicione 'Plug \"edutech-angola/manai-vim-plugin\"' ao seu .vimrc"
+        echo "1. Adicione 'Plug \"ruscorreia/manai-vim-plugin\"' ao seu .vimrc"
         echo "2. Execute :PlugInstall no Vim"
         echo "3. Configure conforme necessário"
         echo ""

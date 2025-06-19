@@ -13,14 +13,14 @@ curl -fsSL https://raw.githubusercontent.com/ruscorreia/manai-vim-plugin/main/in
 #### Para Vim-Plug
 Adicione ao seu `.vimrc`:
 ```vim
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 ```
 Execute `:PlugInstall`
 
 #### Para Vundle
 Adicione ao seu `.vimrc`:
 ```vim
-Plugin 'edutech-angola/manai-vim-plugin'
+Plugin 'ruscorreia/manai-vim-plugin'
 ```
 Execute `:PluginInstall`
 

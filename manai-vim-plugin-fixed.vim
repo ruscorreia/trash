@@ -464,7 +464,7 @@ function! ManaiHelp() abort
     \ '  :ManAI explicar comando grep',
     \ '  :ManAI como usar find com regex',
     \ '',
-    \ 'Para mais informação: https://github.com/edutech-angola/manai-vim-plugin'
+    \ 'Para mais informação: https://github.com/ruscorreia/manai-vim-plugin'
     \ ]
   
   if has('nvim')

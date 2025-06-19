@@ -56,7 +56,7 @@ Para utilizadores que preferem controlo total sobre o processo de instalação, 
 Para utilizadores do vim-plug, adicione a seguinte linha ao seu `.vimrc` ou `init.vim`:
 
 ```vim
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 ```
 
 Depois execute `:PlugInstall` no Vim para completar a instalação.
@@ -66,7 +66,7 @@ Depois execute `:PlugInstall` no Vim para completar a instalação.
 Para utilizadores do Vundle, adicione ao seu `.vimrc`:
 
 ```vim
-Plugin 'edutech-angola/manai-vim-plugin'
+Plugin 'ruscorreia/manai-vim-plugin'
 ```
 
 Execute `:PluginInstall` para instalar o plugin.

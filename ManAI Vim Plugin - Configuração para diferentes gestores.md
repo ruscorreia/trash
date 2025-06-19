@@ -8,7 +8,7 @@ Adicione ao seu `.vimrc` ou `~/.config/nvim/init.vim`:
 call plug#begin('~/.vim/plugged')
 
 " ManAI Plugin
-Plug 'edutech-angola/manai-vim-plugin'
+Plug 'ruscorreia/manai-vim-plugin'
 
 call plug#end()
 
@@ -34,7 +34,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'edutech-angola/manai-vim-plugin'
+Plugin 'ruscorreia/manai-vim-plugin'
 
 call vundle#end()
 filetype plugin indent on
@@ -58,7 +58,7 @@ git clone https://github.com/ruscorreia/manai-vim-plugin.git
 Adicione ao seu `init.vim`:
 
 ```vim
-call dein#add('edutech-angola/manai-vim-plugin')
+call dein#add('ruscorreia/manai-vim-plugin')
 ```
 
 ## Packer.nvim (Neovim)
@@ -67,7 +67,7 @@ Adicione ao seu `init.lua`:
 
 ```lua
 use {
-  'edutech-angola/manai-vim-plugin',
+  'ruscorreia/manai-vim-plugin',
   config = function()
     vim.g.manai_language = 'pt'
     vim.g.manai_window_height = 15
