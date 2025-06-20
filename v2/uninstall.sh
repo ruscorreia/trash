@@ -439,7 +439,7 @@ main() {
         echo "3. Configure conforme necessário"
         echo ""
         info "Ou use a instalação manual:"
-        echo "cp manai-vim-plugin-fixed.vim ~/.vim/plugin/manai.vim"
+        echo "cp manai-vim-plugin.vim ~/.vim/plugin/manai.vim"
     else
         info "Execute sem --dry-run para fazer a desinstalação real"
     fi

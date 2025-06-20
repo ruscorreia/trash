@@ -96,7 +96,7 @@ wget https://raw.githubusercontent.com/ruscorreia/manai-vim-plugin/main/plugin/m
 
 ### Personalizar URL da API
 ```vim
-let g:manai_api_url = 'https://sua-api.exemplo.com/api/ManaiAgentHttpTrigger'
+let g:api_url = 'https://sua-api.exemplo.com/api/ManaiAgentHttpTrigger'
 let g:manai_function_key = 'sua-chave-personalizada'
 ```
 

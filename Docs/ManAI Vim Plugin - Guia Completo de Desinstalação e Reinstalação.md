@@ -226,11 +226,11 @@ Se quiser testar a versão corrigida imediatamente:
 mkdir -p ~/.vim/plugin
 
 # Copiar versão corrigida
-cp manai-vim-plugin-fixed.vim ~/.vim/plugin/manai.vim
+cp manai-vim-plugin.vim ~/.vim/plugin/manai.vim
 
 # Para Neovim
 mkdir -p ~/.config/nvim/plugin
-cp manai-vim-plugin-fixed.vim ~/.config/nvim/plugin/manai.vim
+cp manai-vim-plugin.vim ~/.config/nvim/plugin/manai.vim
 ```
 
 ### **Configuração Inicial**
@@ -248,7 +248,7 @@ let g:manai_cache_enabled = 1            " Activar cache
 let g:manai_timeout = 30                 " Timeout em segundos
 
 " Configurações avançadas (opcionais)
-let g:manai_api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
+let g:api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
 let g:manai_function_key = '58H0KD8feP9x2e6uqY1wkwW-6MqwrNkWI6U4-jdsSa5EAzFuACdqNA=='
 
 " Mapeamentos personalizados (opcionais)

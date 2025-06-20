@@ -130,7 +130,7 @@ Para utilizadores com acesso a instâncias personalizadas do ManAI ou chaves de 
 
 ```vim
 " URL personalizada da API
-let g:manai_api_url = 'https://sua-instancia.exemplo.com/api/ManaiAgentHttpTrigger'
+let g:api_url = 'https://sua-instancia.exemplo.com/api/ManaiAgentHttpTrigger'
 
 " Chave de função personalizada
 let g:manai_function_key = 'sua-chave-personalizada'
@@ -713,7 +713,7 @@ Posicionando o cursor na linha e executando `:ManAILine`, obtém explicação do
 
 ```vim
 " Verificar se plugin está carregado
-:echo exists('g:loaded_manai')
+:echo exists('g:loaded_manai_plugin')
 " Deve retornar 1 se carregado
 
 " Verificar localização do plugin

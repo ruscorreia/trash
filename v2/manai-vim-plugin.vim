@@ -4,10 +4,10 @@
 " Licença: MIT
 " Versão: 1.0.0
 
-if exists('g:loaded_manai')
+if exists('g:loaded_manai_plugin')
   finish
 endif
-let g:loaded_manai = 1
+let g:loaded_manai_plugin = 1
 
 " Verificar se Python está disponível
 if !has('python3')
@@ -22,8 +22,8 @@ if !exists('g:manai_language')
   let g:manai_language = 'pt'
 endif
 
-if !exists('g:manai_api_url')
-  let g:manai_api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
+if !exists('g:api_url')
+  let g:api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
 endif
 
 if !exists('g:manai_function_key')
@@ -61,7 +61,7 @@ from pathlib import Path
 
 class ManaiClient:
     def __init__(self):
-        self.api_url = vim.eval('g:manai_api_url')
+        self.api_url = vim.eval('g:api_url')
         self.function_key = vim.eval('g:manai_function_key')
         self.language = vim.eval('g:manai_language')
         self.timeout = int(vim.eval('g:manai_timeout'))

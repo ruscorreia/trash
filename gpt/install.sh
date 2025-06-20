@@ -21,8 +21,8 @@ info() { echo -e "${BLUE}[INFO] $1${NC}"; }
 success() { echo -e "${PURPLE}[SUCCESS] $1${NC}"; }
 
 # Verificar se ficheiro corrigido existe
-if [ ! -f "manai-vim-plugin-fixed.vim" ]; then
-    error "Ficheiro manai-vim-plugin-fixed.vim não encontrado no directório actual"
+if [ ! -f "manai-vim-plugin.vim" ]; then
+    error "Ficheiro manai-vim-plugin.vim não encontrado no directório actual"
 fi
 
 # Função de ajuda
@@ -175,7 +175,7 @@ install_manual() {
                     fi
                 fi
                 
-                cp manai-vim-plugin-fixed.vim "$vim_plugin_dir/manai.vim"
+                cp manai-vim-plugin.vim "$vim_plugin_dir/manai.vim"
                 success "Plugin instalado para Vim: $vim_plugin_dir/manai.vim"
                 ;;
                 
@@ -189,7 +189,7 @@ install_manual() {
                     fi
                 fi
                 
-                cp manai-vim-plugin-fixed.vim "$nvim_plugin_dir/manai.vim"
+                cp manai-vim-plugin.vim "$nvim_plugin_dir/manai.vim"
                 success "Plugin instalado para Neovim: $nvim_plugin_dir/manai.vim"
                 ;;
         esac
@@ -396,7 +396,7 @@ install_pathogen() {
     
     # Por agora, copiar ficheiro manualmente (até repositório estar disponível)
     mkdir -p "$bundle_dir/plugin"
-    cp manai-vim-plugin-fixed.vim "$bundle_dir/plugin/manai.vim"
+    cp manai-vim-plugin.vim "$bundle_dir/plugin/manai.vim"
     success "Plugin instalado via Pathogen"
     
     if [ "$ADD_CONFIG" = true ]; then
@@ -494,6 +494,10 @@ show_final_instructions() {
 
 # Função principal
 main() {
+    if ! command -v curl &> /dev/null; then
+        error "Este script requer 'curl'. Por favor instale-o primeiro."
+    fi
+
     echo "======================================"
     echo "  ManAI Vim Plugin - Instalação      "
     echo "======================================"

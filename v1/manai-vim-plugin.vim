@@ -3,10 +3,10 @@
 " Versão: 1.0.0
 " Autor: EduTech Angola
 
-if exists('g:loaded_manai')
+if exists('g:loaded_manai_plugin')
     finish
 endif
-let g:loaded_manai = 1
+let g:loaded_manai_plugin = 1
 
 " Configurações padrão
 if !exists('g:manai_python_path')
@@ -17,8 +17,8 @@ if !exists('g:manai_client_path')
     let g:manai_client_path = expand('~/.local/bin/manai')
 endif
 
-if !exists('g:manai_api_url')
-    let g:manai_api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
+if !exists('g:api_url')
+    let g:api_url = 'https://manai-agent-function-app.azurewebsites.net/api/ManaiAgentHttpTrigger'
 endif
 
 if !exists('g:manai_function_key')
@@ -83,7 +83,7 @@ if __name__ == \"__main__\":
         print(query_manai(question))
     else:
         print(\"Erro: Nenhuma pergunta fornecida\")
-"', g:manai_python_path, g:manai_api_url, g:manai_function_key, g:manai_language)
+"', g:manai_python_path, g:api_url, g:manai_function_key, g:manai_language)
 
     " Executar consulta
     echo "ManAI: Consultando..."
@@ -277,7 +277,7 @@ function! s:ManaiConfig()
         \ "",
         \ "Python Path: " . g:manai_python_path,
         \ "Client Path: " . g:manai_client_path,
-        \ "API URL: " . g:manai_api_url,
+        \ "API URL: " . g:api_url,
         \ "Language: " . g:manai_language,
         \ "Window Height: " . g:manai_window_height,
         \ "Auto Close: " . g:manai_auto_close,

@@ -25,7 +25,7 @@ echo "🔍 Testando sintaxe do plugin..."
 # Criar ficheiro temporário de teste
 cat > /tmp/test_manai.vim << 'EOF'
 " Carregar plugin
-source manai-vim-plugin-fixed.vim
+source manai-vim-plugin.vim
 
 " Testar comandos básicos
 echo "Plugin carregado com sucesso"
@@ -70,7 +70,7 @@ echo ""
 echo "🎉 Todos os testes passaram!"
 echo ""
 echo "Para instalar o plugin:"
-echo "1. Copie manai-vim-plugin-fixed.vim para ~/.vim/plugin/"
+echo "1. Copie manai-vim-plugin.vim para ~/.vim/plugin/"
 echo "2. Ou use um gestor de plugins como vim-plug"
 echo ""
 echo "Comandos disponíveis:"

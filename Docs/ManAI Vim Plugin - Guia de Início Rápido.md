@@ -141,7 +141,7 @@ done
 
 ### Plugin não funciona?
 ```vim
-:echo exists('g:loaded_manai')    " Deve retornar 1
+:echo exists('g:loaded_manai_plugin')    " Deve retornar 1
 :ManAIConfig                      " Ver configuração
 ```
 
